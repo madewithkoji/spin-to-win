@@ -1,18 +1,21 @@
-# Koji React Scaffold
+# Spin to Win
 
-Welcome to your new Koji React Project.
+*An easily customizable slot machine type game*
 
--------
-# Where to go
-1. Your Frontend code is located at /frontend/pages and there is an example page at [HomePage](#~/frontend/pages/HomePage/index.js)
-2. Your Backend code is located at /backend/routes and there is an example route at [SampleRoute](#~/backend/routes/SampleRoute/index.js)
-3. 3 Visual Customization Controls (VCCs) have been added to the template. These can be quickly modified to your applicaiton
-    - [Colors](#~/.koji/customization/colors.json!visual) - Change the text color, background color, & link text color.
-    - [Images](#~/.koji/customization/images.json!visual) - Change the spinning icon.
-    - [Strings](#~/.koji/customization/strings.json!visual) - Change the page content text & link text.
+## Things to customize
+- 🌞 Replace the images that you match
+    * [Open configuration](#~/.koji/pieces.json!visual)
+- 🔈 Change the sounds for winning and losing
+    * [Open configuration](#~/.koji/sounds.json!visual)
+- 💅 Change the background, fonts, and visual style
+    * [Open configuration](#~/.koji/style.json!visual)
+- ⚙️ Add your Google Analytics ID and Open Graph information for sharing
+    * [Open configuration](#~/.koji/metadata.json!visual)
 
-## Any Questions?
+When you're ready, [deploy your project](#~/.koji/deploy.json!visual) and share it with the world! If you decide you want to change something later, you can always redeploy to update!
 
-Join our [Discord Server](https://discord.gg/eQuMJF6) for Koji for any software questions or bugs.   
-Any ideas/issues/fixes/pull requests can get sent to either the [Github Repositotry](https://github.com/jonesnxt/koji-react-scaffold)
-or by message to [the template creator](https://gokoji.com/profile/jones)
+## Code structure
+You can find the code for the main game board [here](#~/frontend/pages/GamePage/components/Game.js).
+
+## Support and suggestions
+Please feel free to contact me if you have any suggestions!

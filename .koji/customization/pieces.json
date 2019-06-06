@@ -1,0 +1,56 @@
+{
+  "pieces": {
+    "image1": "https://images.koji-cdn.com/9649a5cc-380a-4e8f-bcdb-21110518587e/slot-machine-5.png",
+    "image2": "https://images.koji-cdn.com/9649a5cc-380a-4e8f-bcdb-21110518587e/clover.png",
+    "image3": "https://images.koji-cdn.com/9649a5cc-380a-4e8f-bcdb-21110518587e/slot-machine-3.png",
+    "image4": "https://images.koji-cdn.com/9649a5cc-380a-4e8f-bcdb-21110518587e/slot-machine.png",
+    "image5": "",
+    "image6": ""
+  },
+  "@@editor": [
+    {
+      "key": "pieces",
+      "name": "Pieces",
+      "icon": "💎",
+      "source": "pieces.json",
+      "fields": [
+        {
+          "key": "image1",
+          "name": "Piece 1 Image",
+          "type": "image",
+          "description": "URL of image to put on Piece 1"
+        },
+        {
+          "key": "image2",
+          "name": "Piece 2 Image",
+          "type": "image",
+          "description": "URL of image to put on Piece 2"
+        },
+        {
+          "key": "image3",
+          "name": "Piece 3 Image",
+          "type": "image",
+          "description": "URL of image to put on Piece 3"
+        },
+        {
+          "key": "image4",
+          "name": "Piece 4 Image",
+          "type": "image",
+          "description": "URL of image to put on Piece 4"
+        },
+        {
+          "key": "image5",
+          "name": "Piece 5 Image",
+          "type": "image",
+          "description": "URL of image to put on Piece 5"
+        },
+        {
+          "key": "image6",
+          "name": "Piece 6 Image",
+          "type": "image",
+          "description": "URL of image to put on Piece 6"
+        }
+      ]
+    }
+  ]
+}

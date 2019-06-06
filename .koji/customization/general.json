@@ -1,0 +1,71 @@
+{
+  "general": {
+    "name": "Spin to Win",
+    "buttonText": "Begin",
+    "fontFamily": "https://fonts.googleapis.com/css?family=Ultra",
+    "backgroundImage": "https://images.koji-cdn.com/9649a5cc-380a-4e8f-bcdb-21110518587e/LandingPage_genericbg_BS.jpg",
+    "width": "5",
+    "height": "3",
+    "animationLength": "500",
+    "baseScore": "50",
+    "startScore": "50000",
+    "bets": "100, 500, 1000, 5000"
+  },
+  "@@editor": [
+    {
+      "key": "general",
+      "name": "Game settings",
+      "icon": "🎮",
+      "source": "general.json",
+      "fields": [
+        {
+          "key": "name",
+          "name": "App name"
+        },
+        {
+          "key": "buttonText",
+          "name": "Start Button Text"
+        },
+        {
+          "key": "fontFamily",
+          "name": "Font Family",
+          "description": "Google fonts link to font to use on page"
+        },
+        {
+          "key": "backgroundImage",
+          "name": "Background Image",
+          "description": "URL of Image to place as background",
+          "type": "image",
+          "typeOptions": {
+            "fit": "cover"
+          }
+        },
+        {
+          "key": "width",
+          "name": "Width",
+          "description": "Number of pieces per row"
+        },
+        {
+          "key": "height",
+          "name": "Height",
+          "description": "Number of pieces per column"
+        },
+        {
+          "key": "bets",
+          "name": "Possible Bets",
+          "description": "Comma seperated list of bets the user can make"
+        },
+        {
+          "key": "baseScore",
+          "name": "Base Score",
+          "description": "Minimum score per piece matched"
+        },
+        {
+          "key": "startScore",
+          "name": "Start Score",
+          "description": "Score for the user to start at"
+        }
+      ]
+    }
+  ]
+}
