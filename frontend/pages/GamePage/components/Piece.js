@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Koji from 'koji-tools';
 
 const Piece = styled.div.attrs((props) => ({
     style: {
@@ -9,11 +10,11 @@ const Piece = styled.div.attrs((props) => ({
                 ${(props.y >= props.height ?
                     (props.height - props.y - 1) * props.size : props.y * props.size)
                     + (props.deltaY * props.size)}px
-            ) ${props.matched || props.theme.general.width - props.spinning === props.x ? 'scale(1.1, 1.1)' : ''}
+            ) ${props.matched || Koji.config.general.width - props.spinning === props.x ? 'scale(1.1, 1.1)' : ''}
         `,        
     },
 }))`
-    ${(props) => props.animate && `transition: transform ${props.theme.general.animationLength / 1000}s ease-in-out`};
+    ${(props) => props.animate && `transition: transform ${Koji.config.general.animationLength / 1000}s ease-in-out`};
     width: ${({ size }) => size}px;
     height: ${({ size }) => size}px;
     margin: 3px;
@@ -44,7 +45,7 @@ const Piece = styled.div.attrs((props) => ({
         box-shadow: inset 0   20px 15px rgba(0,0,0,0.70);
     `};
 
-    ${(props) => props.theme.general.width - props.spinning === props.x && `
+    ${(props) => Koji.config.general.width - props.spinning === props.x && `
         background: center / contain no-repeat url(${props.image}),rgba(255, 200, 14, 0.6);
     `}
 

@@ -1,9 +1,9 @@
 // High score table stuff
-import { Request, Routes } from 'helpers/api';
+import Koji from 'koji-tools';
 
 function getScores() {
     return new Promise((resolve, reject) => {
-        Request(Routes.GetScores).then((response) => {
+        Koji.request(Koji.routes.GetScores).then((response) => {
             resolve(response);
         })
     })
@@ -11,7 +11,7 @@ function getScores() {
 
 function addScore(name, score) {
     return new Promise((resolve, reject) => {
-        Request(Routes.AddScore, {
+        Koji.request(Koji.routes.AddScore, {
             body: {
                 name,
                 score,
